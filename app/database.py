@@ -8,4 +8,4 @@ engine = create_engine(DATABASE_URL)
 
 session = sessionmaker(engine)
 
-base = declarative_base()
+Base = declarative_base()
