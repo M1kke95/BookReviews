@@ -9,7 +9,7 @@ password_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 def verify_password(plain_password, hashed_password):
     return password_context.verify(plain_password, hashed_password)
 
-def get_password(password):
+def get_passwordHash(password):
     return password_context.hash(password)
 
 def create_access_token(data: dict):
